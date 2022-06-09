@@ -633,6 +633,9 @@ public class ScoreboardWrapper {
             if (name.equals(playerName)) {
                 name = ChatColor.GOLD + "--You--";
             }
+            else {
+                name = " " + ChatColor.WHITE + name + " ";
+            }
 
             sidebarObjective.getScore(name).setScore(stat.statVal);
         }
